@@ -37,7 +37,7 @@ func (j *JSONData) Encoding() error {
 	if err != nil {
 		return err
 	}
-	yamlData, err := json.Marshal(&j.DockerCompose)
+	yamlData, err := yaml.Marshal(&j.DockerCompose)
 	if err != nil {
 		return err
 	}
